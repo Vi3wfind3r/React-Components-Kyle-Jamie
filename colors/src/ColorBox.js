@@ -2,11 +2,16 @@ import React from 'react';
 
 export default function ColorBox(props) {
 
-  function setColor(props) {
-    // return 'rgb(255,0,255)';
+  const styleObj = {
+    backgroundColor: `rgb(${props.colors.red}, ${props.colors.green}, ${props.colors.blue})`,
+    height: '200px',
+    width: '200px'
   }
+
   
   return (
-    <div className="colorBox" style={setColor()}></div>
+    <div className="colorBox" style={styleObj}>
+
+    </div>
   );
 }
