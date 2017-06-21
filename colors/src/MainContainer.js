@@ -15,9 +15,9 @@ export default class MainContainer extends React.Component {
   
   render() {
     return (
-      <div>
-        <SliderContainer updateColors={(value) => this.setState(value)} sliderValues={this.state}/>
+      <div className='container'>
         <RgbDisplay colors={this.state}/>
+        <SliderContainer updateColors={(value) => this.setState(value)} sliderValues={this.state}/>
         <ColorBox colors={this.state}/>
       </div>
       );
