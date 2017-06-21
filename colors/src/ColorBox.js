@@ -7,7 +7,6 @@ export default function ColorBox(props) {
     height: '200px',
     width: '200px'
   }
-
   
   return (
     <div className="colorBox" style={styleObj}>

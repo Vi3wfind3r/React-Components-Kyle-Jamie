@@ -15,11 +15,10 @@ export default class SliderContainer extends React.Component {
   render() {
     return (
       <div>
-        <RedSlider onChange={v => this.setSliderColors('red', v)} />
-        <GreenSlider onChange={v => this.setSliderColors('green', v)} />
-        <BlueSlider onChange={v => this.setSliderColors('blue', v)}/ >
+        <RedSlider onChange={v => this.setSliderColors('red', v)} sliderValue={this.props.sliderValues.red}/>
+        <GreenSlider onChange={v => this.setSliderColors('green', v)} sliderValue={this.props.sliderValues.green}/>
+        <BlueSlider onChange={v => this.setSliderColors('blue', v)} sliderValue={this.props.sliderValues.blue}/>
       </div>
     );
   }
-
 }
